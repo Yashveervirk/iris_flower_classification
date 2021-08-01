@@ -32,7 +32,8 @@ rf_clf.fit(X_train, y_train)
 
 # Creating a Random Forest Classifier model.
 log_reg = LogisticRegression(n_jobs = -1)
-log_reg.fit(X_train, y_train)@st.cache()
+log_reg.fit(X_train, y_train)
+@st.cache()
 def prediction(model, sepal_length, sepal_width, petal_length, petal_width):
   species = model.predict([[sepal_length, sepal_width, petal_length, petal_width]])
   species = species[0]
