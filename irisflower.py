@@ -41,7 +41,8 @@ def prediction(model, sepal_length, sepal_width, petal_length, petal_width):
   elif species == 1:
     return "Iris-virginica"
   else:
-    return "Iris-versicolor"  st.sidebar.title("Iris Species Prediction App")      
+    return "Iris-versicolor" 
+st.sidebar.title("Iris Species Prediction App")      
 
 # Add 4 sliders and store the value returned by them in 4 separate variables. 
 s_len = st.sidebar.slider("Sepal Length", float(iris_df["SepalLengthCm"].min()), float(iris_df["SepalLengthCm"].max()))
